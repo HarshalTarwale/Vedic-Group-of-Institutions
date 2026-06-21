@@ -7,10 +7,12 @@ import Colleges from './pages/Colleges';
 import Admissions from './pages/Admissions';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import BannerModal from './components/BannerModal';
 
 function App() {
   return (
     <Router>
+      <BannerModal />
       <div className="flex flex-col min-h-screen">
         <Header />
         <main className="flex-grow">
