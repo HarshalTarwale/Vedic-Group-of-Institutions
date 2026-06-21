@@ -197,23 +197,32 @@ Please change the parent <Route path="${Y}"> to <Route path="${Y==="/"?"*":`${Y}
                 /* ── Responsive ── */
                 @media (max-width: 600px) {
                     .banner-modal {
-                        width: 92vw;
+                        width: 82vw;
                         height: auto;
-                        border-radius: 16px;
-                        top: 50%;
-                        transform: translate(-50%, -50%);
+                        border-radius: 14px;
                     }
                     .banner-image-wrapper {
                         flex: none;
-                        height: 58vw;
-                        min-height: 0;
+                        height: auto;
+                        overflow: visible;
+                    }
+                    .banner-image {
+                        height: auto;
+                        object-fit: unset;
+                    }
+                    .banner-close {
+                        width: 28px;
+                        height: 28px;
+                        top: 8px;
+                        right: 8px;
                     }
                     .banner-cta-btn {
-                        font-size: 0.82rem;
-                        padding: 11px 20px;
+                        font-size: 0.78rem;
+                        padding: 10px 16px;
+                        border-radius: 40px;
                     }
                     .banner-cta-wrapper {
-                        padding: 12px 14px 16px;
+                        padding: 10px 12px 14px;
                         background: #0f172a;
                     }
                 }
