@@ -43,6 +43,21 @@ const BannerModal = () => {
                     />
                 </div>
 
+                {/* CTA Button */}
+                <div className="banner-cta-wrapper">
+                    <a
+                        href="https://updeled.gov.in/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="banner-cta-btn"
+                    >
+                        <span className="banner-btn-shine" />
+                        <span className="banner-btn-text">
+                            🎓 Apply for D.El.Ed Admissions Now
+                        </span>
+                    </a>
+                </div>
+
             </div>
 
             <style>{`
@@ -153,7 +168,6 @@ const BannerModal = () => {
                     animation: none;
                 }
 
-                /* Shine sweep effect */
                 .banner-btn-shine {
                     position: absolute;
                     top: 0;
