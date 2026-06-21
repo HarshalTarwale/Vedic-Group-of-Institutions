@@ -32,6 +32,15 @@ const Home = () => {
                                 >
                                     Admission Process
                                 </Link>
+                                <a
+                                    href="https://updeled.gov.in/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="px-8 py-4 bg-amber-500 hover:bg-amber-600 text-white rounded-lg font-semibold shadow-lg hover:shadow-amber-500/50 transition-all flex items-center gap-2"
+                                >
+                                    Apply for D.El.Ed
+                                    <ArrowRight size={20} />
+                                </a>
                             </div>
                         </div>
                         <div className="hidden lg:block">
