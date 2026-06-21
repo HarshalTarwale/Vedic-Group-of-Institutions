@@ -215,18 +215,35 @@ const BannerModal = () => {
                 }
 
                 /* ── Responsive ── */
-                @media (max-width: 480px) {
+                @media (max-width: 600px) {
                     .banner-modal {
-                        width: 95vw;
-                        height: 88vh;
+                        width: 82vw;
+                        height: auto;
                         border-radius: 14px;
                     }
+                    .banner-image-wrapper {
+                        flex: none;
+                        height: auto;
+                        overflow: visible;
+                    }
+                    .banner-image {
+                        height: auto;
+                        object-fit: unset;
+                    }
+                    .banner-close {
+                        width: 28px;
+                        height: 28px;
+                        top: 8px;
+                        right: 8px;
+                    }
                     .banner-cta-btn {
-                        font-size: 0.85rem;
-                        padding: 12px 22px;
+                        font-size: 0.78rem;
+                        padding: 10px 16px;
+                        border-radius: 40px;
                     }
                     .banner-cta-wrapper {
-                        padding: 12px 16px 16px;
+                        padding: 10px 12px 14px;
+                        background: #0f172a;
                     }
                 }
             `}</style>
