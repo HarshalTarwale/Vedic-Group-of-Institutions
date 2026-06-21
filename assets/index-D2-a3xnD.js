@@ -56,6 +56,9 @@ Please change the parent <Route path="${Y}"> to <Route path="${Y==="/"?"*":`${Y}
                     transform: translate(-50%, -50%);
                     z-index: 9999;
                     width: min(92vw, 580px);
+                    height: 92vh;
+                    display: flex;
+                    flex-direction: column;
                     overflow: hidden;
                     background: linear-gradient(145deg, #0f172a, #1e293b);
                     border-radius: 20px;
@@ -65,9 +68,6 @@ Please change the parent <Route path="${Y}"> to <Route path="${Y==="/"?"*":`${Y}
                         0 25px 60px rgba(0, 0, 0, 0.6),
                         0 0 80px rgba(245, 158, 11, 0.08);
                     animation: slideUp 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-                }
-                .banner-modal::-webkit-scrollbar {
-                    display: none;
                 }
 
                 .banner-close {
@@ -95,8 +95,8 @@ Please change the parent <Route path="${Y}"> to <Route path="${Y==="/"?"*":`${Y}
                 }
 
                 .banner-image-wrapper {
-                    width: 100%;
-                    height: 62vh;
+                    flex: 1;
+                    min-height: 0;
                     overflow: hidden;
                     display: block;
                 }
@@ -110,10 +110,11 @@ Please change the parent <Route path="${Y}"> to <Route path="${Y==="/"?"*":`${Y}
                 }
 
                 .banner-cta-wrapper {
-                    padding: 18px 24px 22px;
+                    flex-shrink: 0;
+                    padding: 16px 24px 20px;
                     display: flex;
                     justify-content: center;
-                    background: linear-gradient(to top, #0f172a, transparent);
+                    background: linear-gradient(to top, #0f172a 60%, transparent);
                 }
 
                 .banner-cta-btn {
@@ -197,17 +198,15 @@ Please change the parent <Route path="${Y}"> to <Route path="${Y==="/"?"*":`${Y}
                 @media (max-width: 480px) {
                     .banner-modal {
                         width: 95vw;
+                        height: 88vh;
                         border-radius: 14px;
-                    }
-                    .banner-image-wrapper {
-                        height: 52vh;
                     }
                     .banner-cta-btn {
                         font-size: 0.85rem;
                         padding: 12px 22px;
                     }
                     .banner-cta-wrapper {
-                        padding: 14px 16px 18px;
+                        padding: 12px 16px 16px;
                     }
                 }
             `})]}):null};function ax(){return u.jsxs(Jy,{children:[u.jsx(lx,{}),u.jsxs("div",{className:"flex flex-col min-h-screen",children:[u.jsx(Lg,{}),u.jsx("main",{className:"flex-grow",children:u.jsxs(Ny,{children:[u.jsx(Ha,{path:"/",element:u.jsx(Vg,{})}),u.jsx(Ha,{path:"/about",element:u.jsx(Pg,{})}),u.jsx(Ha,{path:"/colleges",element:u.jsx(kg,{})}),u.jsx(Ha,{path:"/admissions",element:u.jsx($g,{})}),u.jsx(Ha,{path:"/contact",element:u.jsx(ex,{})})]})}),u.jsx(Xg,{})]})]})}zp.createRoot(document.getElementById("root")).render(u.jsx(M.StrictMode,{children:u.jsx(ax,{})}));
