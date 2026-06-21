@@ -195,18 +195,26 @@ Please change the parent <Route path="${Y}"> to <Route path="${Y==="/"?"*":`${Y}
                 }
 
                 /* ── Responsive ── */
-                @media (max-width: 480px) {
+                @media (max-width: 600px) {
                     .banner-modal {
-                        width: 95vw;
-                        height: 88vh;
-                        border-radius: 14px;
+                        width: 92vw;
+                        height: auto;
+                        border-radius: 16px;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                    .banner-image-wrapper {
+                        flex: none;
+                        height: 58vw;
+                        min-height: 0;
                     }
                     .banner-cta-btn {
-                        font-size: 0.85rem;
-                        padding: 12px 22px;
+                        font-size: 0.82rem;
+                        padding: 11px 20px;
                     }
                     .banner-cta-wrapper {
-                        padding: 12px 16px 16px;
+                        padding: 12px 14px 16px;
+                        background: #0f172a;
                     }
                 }
             `})]}):null};function ax(){return u.jsxs(Jy,{children:[u.jsx(lx,{}),u.jsxs("div",{className:"flex flex-col min-h-screen",children:[u.jsx(Lg,{}),u.jsx("main",{className:"flex-grow",children:u.jsxs(Ny,{children:[u.jsx(Ha,{path:"/",element:u.jsx(Vg,{})}),u.jsx(Ha,{path:"/about",element:u.jsx(Pg,{})}),u.jsx(Ha,{path:"/colleges",element:u.jsx(kg,{})}),u.jsx(Ha,{path:"/admissions",element:u.jsx($g,{})}),u.jsx(Ha,{path:"/contact",element:u.jsx(ex,{})})]})}),u.jsx(Xg,{})]})]})}zp.createRoot(document.getElementById("root")).render(u.jsx(M.StrictMode,{children:u.jsx(ax,{})}));
