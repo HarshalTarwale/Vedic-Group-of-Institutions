@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { FileText, Users, Calendar, CheckCircle, UserCheck, Phone, X, Send, Upload, Loader2 } from 'lucide-react';
 
 const Admissions = () => {
@@ -311,13 +312,13 @@ const Admissions = () => {
                             >
                                 Start Application
                             </button>
-                            <a
-                                href="/contact"
+                            <Link
+                                to="/contact"
                                 className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border-input bg-white shadow-sm hover:bg-slate-50 hover:text-accent-foreground h-10 rounded-md px-8 border border-slate-200 text-slate-900"
                             >
                                 <Phone className="w-5 h-5 mr-2" />
                                 Contact Admissions
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
